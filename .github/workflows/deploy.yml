@@ -6,10 +6,6 @@ jobs:
         steps:
             - name: Get Code
               uses: actions/checkout@v6
-            - name: Install NodeJS
-              uses: actions/setup-node@v6
-              with: 
-                node-version: 18
             - name: Install Dependencies
               run: npm install
             - name: Run Linter
@@ -20,10 +16,6 @@ jobs:
         steps:
             - name: Get Code
               uses: actions/checkout@v6
-            - name: Install NodeJS
-              uses: actions/setup-node@v6
-              with: 
-                node-version: 18
             - name: Install Dependencies
               run: npm install
             - name: Run Tests
@@ -34,10 +26,6 @@ jobs:
         steps:
             - name: Get Code
               uses: actions/checkout@v6
-            - name: Install NodeJS
-              uses: actions/setup-node@v6
-              with: 
-                node-version: 18
             - name: Install Dependencies
               run: npm install
             - name: Build Project
